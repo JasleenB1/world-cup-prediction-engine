@@ -1,0 +1,45 @@
+group,venue_city,lat,lon,country
+A,Mexico City,19.43,-99.13,MEX
+A,Zapopan,20.72,-103.39,MEX
+A,Atlanta,33.75,-84.39,USA
+B,Toronto,43.65,-79.38,CAN
+B,Vancouver,49.28,-123.12,CAN
+B,Seattle,47.61,-122.33,USA
+B,Santa Clara,37.35,-121.96,USA
+C,East Rutherford,40.81,-74.07,USA
+C,Foxborough,42.09,-71.26,USA
+C,Miami,25.96,-80.24,USA
+C,Atlanta,33.75,-84.39,USA
+D,Los Angeles,34.01,-118.41,USA
+D,Vancouver,49.28,-123.12,CAN
+D,Seattle,47.61,-122.33,USA
+D,Santa Clara,37.35,-121.96,USA
+E,Houston,29.76,-95.36,USA
+E,Philadelphia,39.95,-75.17,USA
+E,Toronto,43.65,-79.38,CAN
+E,Kansas City,39.10,-94.58,USA
+F,Dallas,32.75,-96.81,USA
+F,Guadalajara,20.72,-103.39,MEX
+F,Houston,29.76,-95.36,USA
+G,Seattle,47.61,-122.33,USA
+G,Los Angeles,34.01,-118.41,USA
+G,Vancouver,49.28,-123.12,CAN
+H,Atlanta,33.75,-84.39,USA
+H,Miami,25.96,-80.24,USA
+H,Houston,29.76,-95.36,USA
+H,Zapopan,20.72,-103.39,MEX
+I,East Rutherford,40.81,-74.07,USA
+I,Foxborough,42.09,-71.26,USA
+I,Philadelphia,39.95,-75.17,USA
+J,Kansas City,39.10,-94.58,USA
+J,Santa Clara,37.35,-121.96,USA
+J,Dallas,32.75,-96.81,USA
+K,Houston,29.76,-95.36,USA
+K,Mexico City,19.43,-99.13,MEX
+K,Zapopan,20.72,-103.39,MEX
+K,Miami,25.96,-80.24,USA
+K,Atlanta,33.75,-84.39,USA
+L,Dallas,32.75,-96.81,USA
+L,Guadalajara,20.72,-103.39,MEX
+L,Philadelphia,39.95,-75.17,USA
+L,Toronto,43.65,-79.38,CAN

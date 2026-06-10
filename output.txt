@@ -1,0 +1,142 @@
+======================================================================
+2026 FIFA WORLD CUP PREDICTION MODEL (FULL)
+Elo + form + WC history + squad value + injuries + managers + travel + ML
+Monte Carlo simulations: 20,000
+======================================================================
+Loaded 49,400 international matches since 1872-11-30
+
+--- Fjelstul historical group-stage insights ---
+Average pre-tournament Elo rank by final group position:
+  Position 1: avg Elo rank 8.8, advance rate 100% (159 teams)
+  Position 2: avg Elo rank 12.2, advance rate 92% (159 teams)
+  Position 3: avg Elo rank 14.0, advance rate 15% (158 teams)
+  Position 4: avg Elo rank 16.5, advance rate 0% (150 teams)
+
+--- External factors (Transfermarkt, injuries, managers, travel) ---
+         team  market_value_meur  squad_bonus  injury_penalty  manager_bonus  travel_bonus  external_total
+       France               1520         76.1            -9.0           12.0          16.1            95.2
+      England               1360         72.0            -3.0           18.0          -2.3            84.6
+        Spain               1220         67.9            -3.0            6.0           2.1            73.0
+     Portugal               1010         60.8            -0.0            6.0          -1.2            65.7
+    Argentina                783         51.3            -4.2           12.0           4.4            63.5
+       Brazil                928         57.7           -21.6           18.0           7.8            61.9
+United States                386         24.9            -2.4            0.0          35.0            57.5
+      Germany                947         58.4            -6.6            0.0           3.7            55.6
+      Belgium                548         38.0            -0.0            6.0          11.2            55.2
+       Norway                590         40.8            -0.0            6.0           8.4            55.2
+       Mexico                192         -1.1            -0.0           18.0          35.0            51.9
+      Senegal                478         32.9            -0.0            0.0          17.7            50.6
+
+--- ML layer: ridge regression trained on 22 World Cups (1930-2022) ---
+Top ML bonuses: Argentina +18, Japan +18, Brazil +18, Uruguay +17, Spain +16
+
+--- Full rating breakdown (top 12) ---
+       team  career_elo  form_elo  blended  wc_bonus  qual_bonus  upset_bonus  external  ml_bonus  total
+      Spain      2058.7    1677.1   1978.7     -60.0         6.3          0.0      73.0      15.8 2043.8
+     France      2008.4    1601.6   1928.4     -29.4         1.3          0.7      95.2      15.0 2041.2
+  Argentina      2042.8    1629.3   1962.8     -51.0        -5.8          0.0      63.5      18.5 2018.1
+   Portugal      1955.7    1600.2   1875.7      -3.8         0.5          0.0      65.7      13.8 1981.9
+    England      1962.8    1646.7   1882.8     -57.1         2.9          0.0      84.6      14.1 1957.3
+     Brazil      2006.1    1578.6   1926.1     -60.0       -30.7          0.0      61.9      17.8 1945.1
+    Belgium      1906.1    1581.7   1826.1      18.3       -12.9          0.0      55.2      14.1 1930.8
+    Morocco      1867.8    1684.7   1794.6      53.3         5.6          0.0      44.7       9.8 1923.1
+Netherlands      1927.8    1605.2   1847.8      -9.1        -2.9          0.0      41.7      14.8 1922.3
+    Croatia      1876.5    1562.3   1796.5      60.0        -5.4          4.0      34.9      14.5 1919.4
+    Ecuador      1863.1    1577.9   1783.1      60.0        11.8          7.8      29.1      -5.8 1901.0
+    Germany      1916.3    1602.5   1836.3     -32.5        -6.8          0.0      55.6      14.3 1896.9
+
+--- Current Elo strength (2026 World Cup teams) ---
+   1. Spain                      Elo:  2058.7  Adjusted:  2043.8
+   2. France                     Elo:  2008.4  Adjusted:  2041.2
+   3. Argentina                  Elo:  2042.8  Adjusted:  2018.1
+   4. Portugal                   Elo:  1955.7  Adjusted:  1981.9
+   5. England                    Elo:  1962.8  Adjusted:  1957.3
+   6. Brazil                     Elo:  2006.1  Adjusted:  1945.1
+   7. Belgium                    Elo:  1906.1  Adjusted:  1930.8
+   8. Morocco                    Elo:  1867.8  Adjusted:  1923.1
+   9. Netherlands                Elo:  1927.8  Adjusted:  1922.3
+  10. Croatia                    Elo:  1876.5  Adjusted:  1919.4
+  11. Ecuador                    Elo:  1863.1  Adjusted:  1901.0
+  12. Germany                    Elo:  1916.3  Adjusted:  1896.9
+  13. Japan                      Elo:  1897.7  Adjusted:  1888.6
+  14. Colombia                   Elo:  1938.7  Adjusted:  1887.0
+  15. United States              Elo:  1776.9  Adjusted:  1864.3
+
+--- 2026 Group stage predictions (by adjusted Elo) ---
+  Group A: 1. Mexico (1817) | 2. South Korea (1784) | 3. South Africa (1619) | 4. Czechia (1542)
+  Group B: 1. Canada (1853) | 2. Switzerland (1787) | 3. Bosnia and Herzegovina (1563) | 4. Qatar (1466)
+  Group C: 1. Brazil (1945) | 2. Morocco (1923) | 3. Scotland (1613) | 4. Haiti (1553)
+  Group D: 1. United States (1864) | 2. Turkey (1844) | 3. Paraguay (1734) | 4. Australia (1702)
+  Group E: 1. Ecuador (1901) | 2. Germany (1897) | 3. Ivory Coast (1696) | 4. Curaçao (1490)
+  Group F: 1. Netherlands (1922) | 2. Japan (1889) | 3. Tunisia (1663) | 4. Sweden (1621)
+  Group G: 1. Belgium (1931) | 2. Egypt (1704) | 3. Iran (1678) | 4. New Zealand (1567)
+  Group H: 1. Spain (2044) | 2. Uruguay (1854) | 3. Saudi Arabia (1589) | 4. Cape Verde (1517)
+  Group I: 1. France (2041) | 2. Senegal (1863) | 3. Norway (1839) | 4. Iraq (1501)
+  Group J: 1. Argentina (2018) | 2. Algeria (1823) | 3. Austria (1765) | 4. Jordan (1536)
+  Group K: 1. Portugal (1982) | 2. Colombia (1887) | 3. Uzbekistan (1641) | 4. DR Congo (1638)
+  Group L: 1. England (1957) | 2. Croatia (1919) | 3. Panama (1664) | 4. Ghana (1618)
+
+Running 20,000 tournament simulations...
+
+======================================================================
+PREDICTED FINAL RANKINGS — 2026 FIFA WORLD CUP (all 48 teams)
+======================================================================
+Rank  Team                            Elo    Adj  AvgFin   Win%  Top4%   R32%
+----------------------------------------------------------------------
+1     France                         2008   2041    13.1   9.6%  26.0%  91.5%
+2     Brazil                         2006   1945    14.3   4.9%  17.1%  89.0%
+3     Morocco                        1868   1923    14.8   4.1%  15.9%  87.9%
+4     Netherlands                    1928   1922    15.3   3.9%  15.1%  87.5%
+5     Ecuador                        1863   1901    15.5   3.6%  14.9%  87.0%
+6     Germany                        1916   1897    15.7   3.5%  14.6%  86.6%
+7     Spain                          2059   2044    16.1   9.6%  25.3%  93.5%
+8     Japan                          1898   1889    16.4   2.9%  12.9%  84.5%
+9     England                        1963   1957    16.9   5.4%  18.1%  88.9%
+10    Canada                         1798   1853    17.1   2.9%  13.0%  89.9%
+11    Mexico                         1861   1817    17.2   1.9%   9.6%  85.0%
+12    Belgium                        1906   1931    17.4   4.6%  16.9%  91.1%
+13    Argentina                      2043   2018    17.4   8.0%  22.4%  92.0%
+14    Portugal                       1956   1982    17.8   6.5%  20.3%  90.3%
+15    South Korea                    1828   1784    18.1   1.4%   8.2%  82.4%
+16    Switzerland                    1841   1787    18.5   1.5%   9.1%  85.0%
+17    Croatia                        1876   1919    18.5   3.8%  15.0%  85.8%
+18    Senegal                        1831   1864    19.3   2.4%  10.2%  76.8%
+19    United States                  1777   1864    20.0   2.6%  12.0%  80.3%
+20    Norway                         1793   1839    20.4   1.8%   8.4%  73.3%
+21    Colombia                       1939   1887    20.6   3.1%  12.3%  83.1%
+22    Turkey                         1799   1844    20.9   2.2%  10.5%  78.0%
+23    Uruguay                        1885   1854    21.6   2.3%  10.6%  83.2%
+24    Algeria                        1810   1823    23.4   1.6%   8.3%  76.2%
+25    Ivory Coast                    1762   1696    24.6   0.6%   4.1%  62.9%
+26    Austria                        1773   1764    25.6   0.7%   5.4%  67.5%
+27    Egypt                          1748   1704    26.0   0.6%   4.6%  67.7%
+28    Paraguay                       1752   1734    26.1   0.7%   4.7%  59.4%
+29    South Africa                   1642   1619    26.6   0.2%   2.4%  57.7%
+30    Iran                           1849   1678    27.4   0.4%   3.7%  63.8%
+31    Tunisia                        1735   1663    27.6   0.3%   2.4%  51.0%
+32    Australia                      1826   1702    27.6   0.5%   3.5%  53.0%
+33    Bosnia and Herzegovina         1585   1563    29.5   0.1%   1.8%  53.9%
+34    Scotland                       1716   1612    29.5   0.2%   2.0%  48.8%
+35    Panama                         1755   1664    30.2   0.3%   2.5%  50.0%
+36    Sweden                         1710   1621    30.3   0.1%   1.8%  43.5%
+37    Uzbekistan                     1746   1641    30.9   0.2%   2.0%  46.0%
+38    DR Congo                       1673   1638    31.1   0.2%   2.0%  46.3%
+39    Saudi Arabia                   1658   1589    32.5   0.1%   1.6%  48.7%
+40    Czechia                        1722   1542    32.8   0.1%   1.2%  42.8%
+41    Ghana                          1650   1618    33.5   0.1%   1.7%  41.7%
+42    Haiti                          1668   1552    33.5   0.1%   1.1%  38.7%
+43    New Zealand                    1707   1566    34.2   0.1%   1.4%  43.7%
+44    Qatar                          1584   1466    36.9   0.0%   0.7%  36.9%
+45    Cape Verde                     1602   1517    37.0   0.1%   0.9%  37.8%
+46    Jordan                         1697   1536    38.2   0.1%   0.8%  31.7%
+47    Curaçao                        1560   1490    38.8   0.0%   0.6%  30.9%
+48    Iraq                           1687   1501    39.4   0.1%   0.7%  26.9%
+
+======================================================================
+MOST LIKELY CHAMPION: Spain
+  Win probability: 9.6%
+  Adjusted Elo: 2044
+  (Overall rank by average finish: #7)
+======================================================================
+
+Results saved to /Users/jasleenbakshi/Desktop/WorldCup/output/
